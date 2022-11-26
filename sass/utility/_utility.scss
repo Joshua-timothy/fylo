@@ -1,0 +1,23 @@
+.bg-light-gray {
+  background-color: #f8f8fe;
+}
+
+.bg-very-dark-blue {
+  background-color: $Very-Dark-Blue;
+}
+.bg-desaturated-blue {
+  background-color: $Desaturated-Blue;
+}
+
+.margin-bottom {
+  margin-bottom: 0.94rem;
+}
+
+.margin-top {
+  margin-top: 0.94rem;
+}
+
+.container {
+  max-width: 130rem;
+  margin-inline: auto;
+}

@@ -1,0 +1,175 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem 4rem;
+  position: relative;
+
+  &__checkbox {
+    display: none;
+  }
+
+  #bar {
+    position: relative;
+    display: none;
+  }
+
+  &__logo {
+    width: 10rem;
+  }
+
+  &__navbar {
+    display: block;
+  }
+
+  &__item {
+    display: block;
+  }
+
+  &__list {
+    display: inline-block;
+    list-style-type: none;
+    margin-inline: 1.4rem;
+    text-align: center;
+  }
+
+  &__link,
+  &__link:link,
+  &__link:visited {
+    font-size: 1rem;
+    color: inherit;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .navigation {
+    display: block;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    background-color: hsl(0, 0%, 100%);
+    z-index: 1000;
+
+    /*     &__logo {
+      width: 30%;
+    } */
+
+    &__logo-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 1.5rem;
+    }
+
+    #bar {
+      display: block;
+      padding-right: 2rem;
+    }
+
+    &__bar,
+    &__bar::after,
+    &__bar::before {
+      content: "";
+      display: inline-block;
+      width: 2rem;
+      height: 2.5px;
+      background-color: black;
+      border-radius: 20px;
+      position: absolute;
+      transition: all 0.5s;
+    }
+
+    &__bar::after {
+      transform: translateY(-8px);
+      top: 1rem;
+    }
+
+    &__bar::before {
+      transform: translateY(-7px);
+    }
+
+    &__navbar {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__checkbox:checked + &__logo-bar &__bar {
+      background-color: transparent;
+    }
+
+    &__checkbox:checked + &__logo-bar &__bar::after {
+      top: 0;
+      transform: rotate(-135deg);
+    }
+
+    &__checkbox:checked + &__logo-bar &__bar::before {
+      top: 0;
+      transform: rotate(135deg);
+    }
+
+    &__item {
+      background-color: hsla(224, 93%, 58%, 0.938);
+      border-radius: 15px;
+      width: 90%;
+      max-width: 600px;
+      padding: 5em 0;
+      position: fixed;
+      top: 6.5rem;
+      z-index: 10000;
+      opacity: 0;
+      visibility: hidden;
+      width: 0%;
+      transition: all 0.5s;
+    }
+
+    &__checkbox:checked ~ &__navbar &__item {
+      opacity: 1;
+      visibility: visible;
+      width: 90%;
+    }
+
+    #navbar {
+      &.active {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+
+    &__list {
+      display: block;
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+      color: $White;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navigation {
+    &__logo-bar {
+      padding: 1rem;
+    }
+
+    &__logo {
+      width: 7rem;
+    }
+  }
+}
+
+@media screen and (max-width: 200px) {
+  .navigation {
+    &__logo {
+      width: 5rem;
+    }
+
+    &__bar,
+    &__bar::after,
+    &__bar::before {
+      width: 90%;
+    }
+  }
+}

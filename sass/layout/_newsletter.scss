@@ -1,0 +1,112 @@
+.newsletter {
+  display: flex;
+  padding: 4rem 4rem;
+
+  &__text {
+    &--main {
+      color: $Light-Grayish-Blue;
+      font-size: $Fs-h2;
+    }
+
+    &--sub {
+      font-size: 1rem;
+      color: $Light-Gray;
+      font-weight: 400;
+      width: 50%;
+      line-height: 1.4;
+    }
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    margin-inline: auto;
+    .form__group {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+
+      &--input {
+        padding: 0.7rem 8rem 0.6rem 0.6rem;
+        border-radius: 3px;
+        outline: none;
+        margin-right: 5px;
+        border: none;
+        border-radius: 3px;
+        margin-bottom: 1rem;
+        font-family: inherit;
+        border: 1px solid transparent;
+        border-bottom: 3px solid transparent;
+        transition: all 0.3s;
+        /*         &:valid {
+          border: 1px solid $Valid-Input;
+          border-bottom: 3px solid $Valid-Input;
+        } */
+
+        &::placeholder {
+          color: rgba(119, 119, 119, 0.315);
+        }
+
+        &:focus {
+          border-bottom: 3px solid #d11616;
+        }
+
+        &:valid {
+          border: 1px solid $Valid-Input;
+          border-bottom: 3px solid $Valid-Input;
+        }
+      }
+
+      &--button {
+        padding: 0.7rem 1rem;
+        background-color: $Bright-Blue;
+        border: none;
+        color: $White;
+        border-radius: 3px;
+        cursor: pointer;
+        transition-property: all;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in-out;
+        font-family: inherit;
+        width: 50%;
+
+        &:hover {
+          background-color: lighten($Bright-Blue, 10%);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .newsletter {
+    flex-wrap: wrap;
+    padding: $Padding-ss;
+
+    &__text {
+      &--main {
+        text-align: center;
+      }
+
+      &--sub {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    &__form {
+      margin-top: 2rem;
+      .form__group {
+        &--input {
+          margin-bottom: 0.6rem;
+          width: 100%;
+        }
+
+        &--button {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

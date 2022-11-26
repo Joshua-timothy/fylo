@@ -1,0 +1,26 @@
+@import "https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap";
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+h1,
+h2 {
+  color: $Very-Dark-Blue;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+p {
+  color: $Very-Dark-Blue;
+}
+
+a,
+a:link,
+a:visited {
+  /* color: $Very-Dark-Blue; */
+  text-decoration: none;
+  display: inline-block;
+}

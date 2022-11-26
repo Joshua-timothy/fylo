@@ -1,0 +1,142 @@
+.bg-f-curves {
+  width: 100%;
+  margin-inline: auto;
+  display: block;
+}
+
+.features__con {
+  padding: $Padding-ls;
+  display: flex;
+  align-items: center;
+
+  &-text {
+    &--main {
+      font-size: $Fs-h2;
+    }
+
+    &--sub {
+      font-size: 1rem;
+      width: 70%;
+    }
+
+    .features__btn {
+      display: inline-block;
+      font-size: 1rem;
+      font-weight: 100;
+      padding-bottom: 3px;
+      border-bottom: 1px solid $Moderate-Cyan;
+      cursor: pointer;
+
+      &:hover {
+        border-bottom: 1px solid lighten($Moderate-Cyan, 20%);
+      }
+
+      a,
+      a:link,
+      a:visited {
+        color: $Moderate-Cyan;
+      }
+
+      i {
+        color: $Moderate-Cyan;
+      }
+    }
+    .features__btn:hover a,
+    .features__btn:hover i {
+      color: lighten($Moderate-Cyan, 20%);
+      transition-property: color, border;
+      transition-duration: 0.3s;
+      transition-timing-function: ease-in-out;
+    }
+
+    .features__article {
+      background-color: $White;
+      box-shadow: 0 0.1rem 1rem rgb(0 0 0 / 8%);
+      border-radius: 5px;
+      padding: 1.5rem;
+      width: 50%;
+
+      &-sub {
+        line-height: 1.7;
+        font-size: 0.8rem;
+        font-weight: 400;
+      }
+
+      .feedback {
+        display: flex;
+        align-items: center;
+        margin-top: 0.5rem;
+
+        &__avatar {
+          width: 2rem;
+          border-radius: 50%;
+          margin-right: 0.7rem;
+        }
+      }
+    }
+  }
+
+  &-img {
+    width: 50%;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .features__con {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+
+    &-text {
+      text-align: center;
+
+      &--sub {
+        font-size: 1rem;
+        width: 90%;
+        margin-inline: auto;
+      }
+
+      .features__article {
+        width: 100%;
+        max-width: 500px;
+        margin-inline: auto;
+        text-align: start;
+      }
+    }
+
+    &-img {
+      width: 80%;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .feedback {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .features__con {
+    padding: $Padding-ss;
+
+    &-img {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .features__con {
+    &-text {
+      &--main {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
