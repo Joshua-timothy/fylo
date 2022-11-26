@@ -2,12 +2,7 @@
 
 ## A Blazing Fast WebPage, Designed By [FrontEndMentor] 🚀 
 
-## [Demo Link](https://devjhozi.github.io/Fylo) 🔗
-
-<br/>
----
-
-**[Link to the CSS tricks article on Dopefolio](https://css-tricks.com/hottest-front-end-tools-in-2021/#aa-58-dopefolio)**   
+## [Demo Link](https://devjhozi.github.io/Fylo) 🔗 
 
 <br/>
 ---
@@ -49,7 +44,7 @@ If you like this project then give it a **Github** star by pressing the **Star**
 
 ## Author 👨‍💻
 
-- **Joshua Timothy** - **[Linkedin](https://linkedin.com/in/DevJhozi)**, **[Twitter](https://twitter.com/JhoziKay)**, **[Github](https://github.com/DevJhozi)**, **[Portfolio](https://rammaheshwari.com)**  
+- **Joshua Timothy** - **[Linkedin](https://linkedin.com/in/DevJhozi)**, **[Twitter](https://twitter.com/JhoziKay)**, **[Github](https://github.com/DevJhozi)**
 
 <br>
 
