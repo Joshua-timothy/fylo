@@ -2,7 +2,7 @@
 
 ## A Blazing Fast WebPage, Designed By [FrontEndMentor] 🚀 
 
-## [Demo Link](https://devjhozi.github.io/fylo) 🔗 
+## [Demo Link](https://joshua-timothy.github.io/fylo) 🔗 
 
 <br/>
 ---
